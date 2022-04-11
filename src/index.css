@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-495057;
+  color: #555;
+  line-height: 1;
+}
+
+.App {
+  height: 95vh;
+  margin: 2.5vh auto;
+  max-width: 40rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  padding: 2rem 2rem 13rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/********************/
+/* Home */
+/********************/
+.home {
+  height: 100%;
+}
+
+.profileBox {
+  max-width: 75%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 9px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 0 2px #f1f3f5;
+  transition: background-color 300ms;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profileBox:hover {
+  background-color: #f1f3f5;
+}
+
+.profileIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.profileText {
+  font-size: 1.6rem;
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.box {
+  border-radius: 9px;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.primaryText h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.primaryText p {
+  color: #e6fcf5;
+  font-size: 1.8rem;
+}
+
+.imgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.imgText h3 {
+  font-weight: 400;
+  color: #e6fcf5;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.imgText p {
+  color: #c3fae8;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+.imgText div {
+  padding: 1rem;
+  width: 60%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.imgBox img {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+}
+
+/********************/
+/* Todo */
+/********************/
+.todo {
+  height: 55rem;
+  overflow: hidden;
+}
+
+.addForm,
+.searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.searchForm {
+  margin-bottom: 3.2rem;
+}
+
+.addForm input[type="text"],
+.searchForm input[type="text"] {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  width: 85%;
+  padding: 1.6rem;
+  border-radius: 9px;
+  border: none;
+  box-shadow: inset 0 0 0 2px #f1f3f5;
+}
+
+.searchForm input[type="text"] {
+  width: 100%;
+}
+
+.addForm input[type="text"]:focus,
+.searchForm input[type="text"]:focus {
+  outline: none;
+}
+
+.addForm button {
+  width: 12%;
+  height: 4.6rem;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.mainTodo {
+  height: 100%;
+  overflow: scroll;
+}
+
+.mainTodo p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.mainTodo ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.todoList {
+  list-style: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+}
+
+.todoList:last-child {
+  margin-bottom: 14.5rem;
+}
+
+.todoList input[type="checkbox"] {
+  width: 12%;
+  height: 4.6rem;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.todoList label {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.todoList svg {
+  margin-left: auto;
+  width: 12%;
+  height: 3rem;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.todoList svg:hover {
+  fill: red;
+}
+
+/********************/
+/* Settings */
+/********************/
+.settingsBox {
+  border-radius: 9px;
+  margin-bottom: 8rem;
+  padding: 1.2rem 1.6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.settingsBox h1 {
+  margin-left: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.backIcon {
+  height: 24px;
+  width: 24px;
+  stroke: #fff;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.settingsPrimary h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.nameForm,
+.bgColorForm {
+  padding: 1.6rem;
+}
+
+.nameForm input[type="text"],
+.bgColorForm input[type="text"] {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 9px;
+  border: none;
+  box-shadow: inset 0 0 0 2px #f1f3f5;
+  margin-bottom: 1.2rem;
+}
+
+.nameForm input[type="text"]:focus,
+.bgColorForm input[type="text"]:focus {
+  outline: none;
+}
+
+.nameForm button,
+.bgColorForm button {
+  border: none;
+  background: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/********************/
+/* Missing */
+/********************/
+.missing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.missing h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #343a40;
+  text-align: center;
+}
+
+.missing p {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #868e96;
+}
+
+.missing div {
+  border: none;
+  background: #f03e3e;
+  padding: 1.6rem 9.6rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #fff;
+  outline: none;
+  transition: background-color 300ms;
+}
+
+.missing div:hover {
+  background-color: #e03131;
+}
+
+/********************/
+/* Footer */
+/********************/
+.footer {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: inset 0 0 10px 0 #ced4da;
+  padding: 1.6rem 1.2rem;
+  border-radius: 0 0 9px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerBox {
+  border-radius: 50%;
+  padding: 0.8rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.footerIcon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+/********************/
+/* Scrollbar */
+/********************/
+::-webkit-scrollbar {
+  width: 2em; /* Total width including `border-width` of scrollbar thumb */
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  height: 1em;
+  border: 0.5em solid rgba(0, 0, 0, 0); /* Transparent border together with `background-clip: padding-box` does the trick */
+  background-clip: padding-box;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

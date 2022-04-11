@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "checked": true,
+      "todo": "Belajar Vanila JavaScript"
+    },
+    {
+      "id": 2,
+      "checked": true,
+      "todo": "Belajar ReactJS"
+    },
+    {
+      "id": 3,
+      "checked": true,
+      "todo": "Belajar NodeJS"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "todo": "Belajar Linux"
+    },
+    {
+      "id": 5,
+      "checked": true,
+      "todo": "Belajar Laravel"
+    },
+    {
+      "id": 6,
+      "checked": false,
+      "todo": "Belajar Java"
+    },
+    {
+      "id": 7,
+      "checked": false,
+      "todo": "Belajar Kotlin"
+    }
+  ]
+}
