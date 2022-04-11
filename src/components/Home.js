@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = ({ username, bgColor }) => {
   return (
     <main className="home">
-      <Link to={"/missing"} style={{ textDecoration: "none" }}>
+      <Link to={"/settings"} style={{ textDecoration: "none" }}>
         <div className="profileBox">
           <svg
             xmlns="http://www.w3.org/2000/svg"
